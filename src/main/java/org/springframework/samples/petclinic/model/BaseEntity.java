@@ -40,11 +40,22 @@ public class BaseEntity implements Serializable {
     }
 
     public void setId(Integer id) {
+        System.out.println(potato(id));
         this.id = id;
     }
 
     public boolean isNew() {
         return this.id == null;
+    }
+
+    public String potato(Integer count) {
+        String result = "";
+        int i = 0;
+        while (i<count) {
+            result += "potato";
+        }
+        return result;
+
     }
 
 }
